@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Faça sua Pizza - Pizzaria Soares</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f1e6; /* Cor de fundo creme */
+            color: #6a4c93; /* Cor do texto em marrom escuro */
+        }
+
+        header {
+            background: #c72c41; /* Cor de fundo vermelha */
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            color: white; /* Cor do texto branca */
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .tamanho {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px; /* Maior área de clique */
+            font-size: 20px; /* Tamanho da fonte aumentado */
+            cursor: pointer;
+            border: none;
+            background-color: #ff6f61; /* Cor de fundo laranja suave */
+            color: white; /* Texto branco */
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s; /* Adiciona transição para transform */
+        }
+
+        .tamanho:hover {
+            background-color: #e75b2e; /* Cor laranja mais escura para hover */
+            transform: scale(1.05); /* Aumenta um pouco o tamanho do botão ao passar o mouse */
+        }
+
+        footer {
+            margin-top: auto; /* Mantenha o rodapé na parte inferior */
+            padding: 10px 0;
+            background: #333; /* Fundo escuro para o rodapé */
+            color: white; /* Texto branco */
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Faça sua Pizza - Pizzaria Soares</h1>
+    </header>
+
+    <section id="modelo-pizza">
+        <h2>Escolha o Tamanho da Pizza</h2>
+        
+        <button type="button" class="tamanho" data-value="pequena">Pequena</button>
+        <button type="button" class="tamanho" data-value="media">Média</button>
+        <button type="button" class="tamanho" data-value="grande">Grande</button>
+        
+        <input type="hidden" id="tamanho" name="tamanho" value="">
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pizzaria Soares. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

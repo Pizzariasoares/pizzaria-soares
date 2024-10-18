@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sabores - Pizzaria Soares</title>
+</head>
+<body>
+    <header>
+        <h1>Sabores - Pizzaria Soares</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="modelo-sabores">
+        <h2>Escolha seu Sabor</h2>
+        <p>Selecione o sabor da sua pizza:</p>
+        
+        <!-- Botões para escolher sabores -->
+        <form id="form-sabor">
+            <button type="button" class="sabor" data-value="Calabresa">Calabresa</button>
+            <button type="button" class="sabor" data-value="Margherita">Margherita</button>
+            <button type="button" class="sabor" data-value="Portuguesa">Portuguesa</button>
+            <input type="hidden" id="sabor" name="sabor" value="">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pizzaria Soares. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

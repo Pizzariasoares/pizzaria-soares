@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f1e6; /* Cor de fundo creme */
+    color: #6a4c93; /* Cor do texto em marrom escuro */
+}
+
+header {
+    background: #c72c41; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto branca */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white; /* Cor do texto branca */
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background: #fff; /* Cor de fundo branca para as seções */
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #c72c41; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto branca */
+}
+
+/* Novos estilos para a seção de sabores */
+#modelo-sabores {
+    text-align: center;
+    margin: 20px;
+}
+
+.sabor {
+    background-color: #ff6f61; /* Cor de fundo laranja suave */
+    border: none;
+    border-radius: 5px;
+    color: white; /* Cor do texto branca */
+    cursor: pointer;
+    padding: 15px 20px;
+    margin: 10px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.sabor:hover {
+    background-color: #e75b2e; /* Cor laranja mais escura para hover */
+}

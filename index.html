@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizzaria Soares</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f1e6; /* Cor de fundo creme */
+            color: #6a4c93; /* Cor do texto em marrom escuro */
+        }
+
+        header {
+            background: #c72c41; /* Cor de fundo vermelha */
+            color: white; /* Cor do texto branca */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white; /* Cor do texto branca */
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: #fff; /* Cor de fundo branca para as seções */
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #c72c41; /* Cor de fundo vermelha */
+            color: white; /* Cor do texto branca */
+        }
+
+        /* Estilo para a seção de contato */
+        #contato {
+            margin-top: 20px; /* Adiciona espaço acima da seção de contato */
+        }
+
+        /* Estilo para o mapa */
+        #map {
+            width: 100%;
+            height: 400px; /* Altura do mapa */
+            border: 0; /* Remove borda do iframe */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pizzaria Soares</h1>
+        <nav>
+            <ul>
+                <li><a href="cardapio.html">Faça sua Pizza</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Bem-vindo à Pizzaria Soares! Servindo pizzas frescas e deliciosas para você e sua família. Nossas pizzas são feitas com ingredientes de alta qualidade e muito amor.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Endereço: Av. Porto, Campo Largo do Piauí - PI, 64148-000</p>
+        <p>Telefone: (11) 1234-5678</p>
+        <p>Email: contato@pizzariasoares.com.br</p>
+
+        <!-- Adicionando o Google Maps -->
+        <div style="width: 100%; height: 400px;">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6695.151236326396!2d-42.63213783271225!3d-3.8185538758643363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78d512ccee1cb89%3A0xf45becc0602df5fd!2sPizzaria%20soares!5e0!3m2!1sen!2sbr!4v1729224868017!5m2!1sen!2sbr" 
+                id="map" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pizzaria Soares. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
